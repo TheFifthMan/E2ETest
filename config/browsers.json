@@ -6,6 +6,52 @@
                 "image": "selenoid/vnc:firefox_57.0",
                 "port": "4444",
                 "path": "/wd/hub"
+            },
+            "58.0": {
+                "image": "selenoid/vnc:firefox_58.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "59.0": {
+                "image": "selenoid/vnc:firefox_59.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "60.0": {
+                "image": "selenoid/vnc:firefox_60.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "61.0": {
+                "image": "selenoid/vnc:firefox_61.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+       
+    },
+    "chrome":{
+        "default": "68.0",
+        "Versions": {
+            "68.0": {
+                "image": "selenoid/vnc:chrome:68.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "67.0": {
+                "image": "selenoid/vnc:chrome:67.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "66.0": {
+                "image": "selenoid/vnc:chrome:66.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "65.0": {
+                "image": "selenoid/vnc:chrome:65.0",
+                "port": "4444",
+                "path": "/"
             }
         }
     }

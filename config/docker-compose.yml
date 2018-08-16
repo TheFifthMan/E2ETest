@@ -6,9 +6,17 @@ services:
     volumes:
       - "$PWD:/etc/selenoid"
       - "/var/run/docker.sock:/var/run/docker.sock"
-      - "$PWD:/opt/selenoid/video"
+      - "$PWD/video/:/opt/selenoid/video"
     environment:
       - OVERRIDE_VIDEO_OUTPUT_DIR=$PWD/storedVideo/
     command: ["-conf", "/etc/selenoid/browsers.json", "-video-output-dir", "/opt/selenoid/video","-cpu","0.8","limit","7","-max-timeout","20m0s","-mem","500m"]
     ports:
       - "4444:4444"
+  selenoid-ui:
+    image: "aerokube/selenoid-ui"
+    network_mode: bridge
+    links:
+      - selenoid
+    ports:
+      - "8080:8080"
+    command: ["--selenoid-uri", "http://selenoid:4444"]
