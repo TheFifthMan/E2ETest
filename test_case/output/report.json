@@ -1,25 +1,25 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 0,
+    "tests": 3,
     "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2018-08-17T10:21:51.121Z",
-    "end": "2018-08-17T10:21:51.240Z",
-    "duration": 119,
+    "failures": 3,
+    "start": "2018-08-17T13:33:50.530Z",
+    "end": "2018-08-17T13:35:16.371Z",
+    "duration": 85841,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
-    "other": 3,
-    "hasOther": true,
-    "skipped": 3,
-    "hasSkipped": true,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
     "passPercentClass": "danger",
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "da6ca600-a9b9-4d94-bc91-885ad5b6d77f",
+    "uuid": "18da0bb8-8d71-430e-9fdd-9e32066a49d8",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "69fbdd66-e4c9-4b4b-ab56-3f05a0dd1dec",
+        "uuid": "3515dc60-6a71-41a3-8b3a-79e8060dd945",
         "title": "Google",
         "fullFile": "",
         "file": "",
@@ -44,26 +44,22 @@
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "43cacdf2-e64d-4733-9f7a-e475398f9df9",
+            "uuid": "df8bbeec-b2e6-4453-a613-044f6506cea0",
             "isHook": true,
             "skipped": false
           },
           {
-            "title": "\"before each\" hook: codeceptjs.before for \"test @123\"",
-            "fullTitle": "Google \"before each\" hook: codeceptjs.before for \"test @123\"",
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Google \"before each\" hook: codeceptjs.before",
             "timedOut": false,
-            "duration": 59,
-            "state": "failed",
+            "duration": 5976,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
             "code": "scenario.setup(suite)",
-            "err": {
-              "message": "Error: Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
-              "estack": "Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessibleError: create container: Error response from daemon: invalid reference format\n    at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)\n    at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)\n    at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)\n    at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)\n    at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "9024efe1-0696-4879-86de-f94e36813ea9",
+            "uuid": "7b1cd50c-5ebf-4738-9e76-7f48ae6e3b3c",
             "isHook": true,
             "skipped": false
           }
@@ -80,7 +76,7 @@
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "8d58418e-caf8-4529-99a6-c77b42ec7cda",
+            "uuid": "56ed9298-fe1b-45e4-935e-81752d6c81c8",
             "isHook": true,
             "skipped": false
           },
@@ -88,14 +84,14 @@
             "title": "\"after each\" hook: codeceptjs.after",
             "fullTitle": "Google \"after each\" hook: codeceptjs.after",
             "timedOut": false,
-            "duration": 1,
+            "duration": 770,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "56e13abb-74cd-41c2-8b3e-85461c7e2a1f",
+            "uuid": "464d1a09-687d-4eac-ae05-d6ddcb0bd198",
             "isHook": true,
             "skipped": false
           }
@@ -105,32 +101,37 @@
             "title": "test @123",
             "fullTitle": "Google test @123",
             "timedOut": false,
-            "duration": 0,
+            "duration": 8442,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
+            "context": "\"test_@123_9a345a6f-773c-4c17-a2ec-a5b259601535.failed.png\"",
             "code": "runSteps(child.steps)",
-            "err": {},
+            "err": {
+              "message": "Error: Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath",
+              "estack": "Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath\n\nScenario Steps:\n\n- I.grabAttributeFrom({\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"}, \"href\") at Object.obj.(anonymous function).obj.(anonymous function) [as grabAttributeFrom] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"https://www.baidu.com\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nError: Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath\n    at new ElementNotFound (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)\n    at assertElementExists (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:2116:11)\n    at WebDriverIO.grabAttributeFrom (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:770:5)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)"
+            },
             "isRoot": false,
-            "uuid": "79d10154-ab77-4485-884d-eb191206c222",
+            "uuid": "9a345a6f-773c-4c17-a2ec-a5b259601535",
             "isHook": false,
-            "skipped": true
+            "skipped": false
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [],
-        "pending": [],
-        "skipped": [
-          "79d10154-ab77-4485-884d-eb191206c222"
+        "failures": [
+          "9a345a6f-773c-4c17-a2ec-a5b259601535"
         ],
-        "duration": null,
+        "pending": [],
+        "skipped": [],
+        "duration": 8442,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
       },
       {
-        "uuid": "236758ed-5dce-4097-82e5-7ed39092b093",
+        "uuid": "7aa51de3-631e-423a-a6de-b57e90f62e8e",
         "title": "Google",
         "fullFile": "",
         "file": "",
@@ -139,33 +140,29 @@
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
             "fullTitle": "Google \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "c2cbf0cc-6e91-46f6-935b-ebbe228b13ec",
+            "uuid": "ac4c1202-d7ab-410d-bc73-ac0356ea44ec",
             "isHook": true,
             "skipped": false
           },
           {
-            "title": "\"before each\" hook: codeceptjs.before for \"test login for freebug\"",
-            "fullTitle": "Google \"before each\" hook: codeceptjs.before for \"test login for freebug\"",
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Google \"before each\" hook: codeceptjs.before",
             "timedOut": false,
-            "duration": 20,
-            "state": "failed",
+            "duration": 6261,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
             "code": "scenario.setup(suite)",
-            "err": {
-              "message": "Error: Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
-              "estack": "Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessibleError: create container: Error response from daemon: invalid reference format\n    at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)\n    at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)\n    at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)\n    at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)\n    at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "a401e0c7-0962-4243-8ead-26a20334cb7c",
+            "uuid": "9d6531b3-33ef-43c5-97be-9e3f618e4472",
             "isHook": true,
             "skipped": false
           }
@@ -175,14 +172,14 @@
             "title": "\"after all\" hook: codeceptjs.afterSuite",
             "fullTitle": "Google \"after all\" hook: codeceptjs.afterSuite",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "13373907-5fbe-4ff9-ad5b-75048b52ea4b",
+            "uuid": "e6c8a1c1-6cc9-462f-b7f2-c46083c21609",
             "isHook": true,
             "skipped": false
           },
@@ -190,14 +187,14 @@
             "title": "\"after each\" hook: codeceptjs.after",
             "fullTitle": "Google \"after each\" hook: codeceptjs.after",
             "timedOut": false,
-            "duration": 0,
+            "duration": 403,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "2120769d-53d5-449a-a7fc-b81fcedf5276",
+            "uuid": "bc33e6e4-2a9e-441d-b466-d05f5feb1ef1",
             "isHook": true,
             "skipped": false
           }
@@ -207,32 +204,38 @@
             "title": "test login for freebug",
             "fullTitle": "Google test login for freebug",
             "timedOut": false,
-            "duration": 0,
+            "duration": 31224,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
+            "context": "\"test_login_fd0791b8-b99d-4f27-99f2-3982af5691ff.failed.png\"",
             "code": "runSteps(child.steps)",
-            "err": {},
+            "err": {
+              "message": "Error: expected web page to include \"登录\"",
+              "estack": "expected web page to include \"登录\"\n\nScenario Steps:\n\n- I.see(\"登录\") at Object.obj.(anonymous function).obj.(anonymous function) [as see] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.waitForElement({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span\"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"/\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nundefined",
+              "diff": "- \n- 七夕特辑 | 不会表白的程序员，就继续凭本事单身吧（送惊喜FreeBuf大礼包）\n- Previous\n- Next\n- 精品公开课\n- 今日20点首播 | CISSP一次通过内功心法\n- 企业公开课\n- GDPR对中国企业风险管理的挑战\n- 最新\n- 观点\n- --( 184 lines more )---\n+ 登录\n"
+            },
             "isRoot": false,
-            "uuid": "2b4f3554-2a18-497c-8fd6-d2ae8dd42ca2",
+            "uuid": "fd0791b8-b99d-4f27-99f2-3982af5691ff",
             "isHook": false,
-            "skipped": true
+            "skipped": false
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [],
-        "pending": [],
-        "skipped": [
-          "2b4f3554-2a18-497c-8fd6-d2ae8dd42ca2"
+        "failures": [
+          "fd0791b8-b99d-4f27-99f2-3982af5691ff"
         ],
-        "duration": null,
+        "pending": [],
+        "skipped": [],
+        "duration": 31224,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
       },
       {
-        "uuid": "5c33af78-52d3-4024-be75-98853f06d868",
+        "uuid": "dab8a9c9-d033-4a66-8640-101c27063490",
         "title": "Freebuf",
         "fullFile": "/Users/wenzhongwei/code/E2ETest/test_case/cases/freebuf_test.js",
         "file": "/cases/freebuf_test.js",
@@ -241,33 +244,29 @@
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
             "fullTitle": "Freebuf \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
-            "duration": 11,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "794eab37-8278-4b0d-90ce-cd6cc4a170e0",
+            "uuid": "4e54f4f0-2726-4f9a-9a95-387db90d0158",
             "isHook": true,
             "skipped": false
           },
           {
-            "title": "\"before each\" hook: codeceptjs.before for \"open the freebuf and login form\"",
-            "fullTitle": "Freebuf \"before each\" hook: codeceptjs.before for \"open the freebuf and login form\"",
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Freebuf \"before each\" hook: codeceptjs.before",
             "timedOut": false,
-            "duration": 14,
-            "state": "failed",
+            "duration": 8140,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
             "code": "scenario.setup(suite)",
-            "err": {
-              "message": "Error: Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
-              "estack": "Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessibleError: create container: Error response from daemon: invalid reference format\n    at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)\n    at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)\n    at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)\n    at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)\n    at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "07d8ef5b-d77b-4864-bfaa-a11860194ca5",
+            "uuid": "51f2b383-78ef-4b66-be0d-cee820f4545b",
             "isHook": true,
             "skipped": false
           }
@@ -284,7 +283,7 @@
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "473c633d-dbfb-4270-9524-b3a4b64e4b5f",
+            "uuid": "a5628ec8-eec2-4bbd-b05d-493e66d64587",
             "isHook": true,
             "skipped": false
           },
@@ -292,14 +291,14 @@
             "title": "\"after each\" hook: finalize codeceptjs",
             "fullTitle": "Freebuf \"after each\" hook: finalize codeceptjs",
             "timedOut": false,
-            "duration": 1,
+            "duration": 155,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "1e98df93-755d-4024-88c8-bf5aaa58bc25",
+            "uuid": "b315d4cc-919b-4e13-8d14-1317b217865c",
             "isHook": true,
             "skipped": false
           }
@@ -309,26 +308,32 @@
             "title": "open the freebuf and login form",
             "fullTitle": "Freebuf: open the freebuf and login form",
             "timedOut": false,
-            "duration": 0,
+            "duration": 24455,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
+            "context": "\"open_the_f_ade6c393-b008-4944-a890-03e083f6bddb.failed.png\"",
             "code": "I.amOnPage('/');\nI.waitForElement({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span'}, 30);\nI.see('登录');\nI.click({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span'});\nI.switchToNextTab();\ndemoPage.Loginform('a403481704@163.com','Freebuf123');\nI.waitForElement({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a'},30);",
-            "err": {},
+            "err": {
+              "message": "Error: expected web page to include \"登录\"",
+              "estack": "expected web page to include \"登录\"\n\nScenario Steps:\n\n- I.see(\"登录\") at Object.obj.(anonymous function).obj.(anonymous function) [as see] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.waitForElement({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span\"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"/\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nundefined",
+              "diff": "- \n- 七夕特辑 | 不会表白的程序员，就继续凭本事单身吧（送惊喜FreeBuf大礼包）\n- Previous\n- Next\n- 精品公开课\n- 今日20点首播 | CISSP一次通过内功心法\n- 企业公开课\n- GDPR对中国企业风险管理的挑战\n- 最新\n- 观点\n- --( 184 lines more )---\n+ 登录\n"
+            },
             "isRoot": false,
-            "uuid": "b8132c6f-de82-452c-bc30-36cb73be6755",
+            "uuid": "ade6c393-b008-4944-a890-03e083f6bddb",
             "isHook": false,
-            "skipped": true
+            "skipped": false
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [],
-        "pending": [],
-        "skipped": [
-          "b8132c6f-de82-452c-bc30-36cb73be6755"
+        "failures": [
+          "ade6c393-b008-4944-a890-03e083f6bddb"
         ],
-        "duration": null,
+        "pending": [],
+        "skipped": [],
+        "duration": 24455,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
