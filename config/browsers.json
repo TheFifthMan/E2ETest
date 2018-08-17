@@ -43,28 +43,28 @@
         "default": "68.0",
         "Versions": {
             "68.0": {
-                "image": "selenoid/vnc:chrome:68.0",
+                "image": "selenoid/vnc:chrome_68.0",
                 "port": "4444",
                 "path": "/",
                 "tmpfs": {"/tmp":"size=512m"}
 
             },
             "67.0": {
-                "image": "selenoid/vnc:chrome:67.0",
+                "image": "selenoid/vnc:chrome_67.0",
                 "port": "4444",
                 "path": "/",
                 "tmpfs": {"/tmp":"size=512m"}
 
             },
             "66.0": {
-                "image": "selenoid/vnc:chrome:66.0",
+                "image": "selenoid/vnc:chrome_66.0",
                 "port": "4444",
                 "path": "/",
                 "tmpfs": {"/tmp":"size=512m"}
 
             },
             "65.0": {
-                "image": "selenoid/vnc:chrome:65.0",
+                "image": "selenoid/vnc:chrome_65.0",
                 "port": "4444",
                 "path": "/",
                 "tmpfs": {"/tmp":"size=512m"}

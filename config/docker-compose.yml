@@ -6,10 +6,10 @@ services:
     volumes:
       - "$PWD:/etc/selenoid"
       - "/var/run/docker.sock:/var/run/docker.sock"
-      - "$PWD/video/:/opt/selenoid/video"
-      - "$PWD/logs/:/opt/selenoid/logs/"
+      - "/data/video/:/opt/selenoid/video"
+      - "/data/logs/:/opt/selenoid/logs/"
     environment:
-      - OVERRIDE_VIDEO_OUTPUT_DIR=$PWD/storedVideo/
+      - OVERRIDE_VIDEO_OUTPUT_DIR=$/data/storedVideo/
     command: ["-log-output-dir","/opt/selenoid/logs","-conf", "/etc/selenoid/browsers.json", "-video-output-dir", "/opt/selenoid/video","-max-timeout","20m0s","-mem","850m"]
     ports:
       - "4444:4444"
