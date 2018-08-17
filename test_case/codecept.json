@@ -5,7 +5,7 @@
       "url": "http://www.freebuf.com",
       "host":"192.168.31.215",
       "port":4444,
-      "browser": "firefox",
+      "browser": "chrome",
       "uniqueScreenshotNames": "true",
       "desiredCapabilities": { 
           "version": "68.0",
