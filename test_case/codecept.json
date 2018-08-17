@@ -4,12 +4,13 @@
     "WebDriverIO": {
       "url": "http://www.freebuf.com",
       "host":"192.168.31.215",
-      "browser": "chrome",
+      "port":4444,
+      "browser": "firefox",
       "uniqueScreenshotNames": "true",
       "desiredCapabilities": { 
-          "browserName": "chrome",
-          "version": "65.0"
-          
+          "version": "68.0",
+          "enableVNC":false,
+          "enableVideo":true
       } 
 
     },
