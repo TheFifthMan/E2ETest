@@ -1,0 +1,46 @@
+{
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://www.freebuf.com",
+      "browser": "chrome"
+    },
+    "Mochawesome": {
+      "uniqueScreenshotNames": "true"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "demoPage": "./pages/demo.js"
+  },
+  "mocha": {
+    "reporterOptions": {
+      "codeceptjs-cli-reporter": {
+        "stdout": "-",
+        "options": {
+          "verbose": true,
+          "steps": true
+        }
+      },
+    "mochawesome": {
+        "stdout": "./output/console.log",
+        "options": {
+          "reportDir": "./output",
+          "reportFilename": "report"
+        }
+      }
+    }
+  },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {
+    "features": "./features/*.feature",
+    "steps": [
+      "./step_definitions/steps.js"
+    ]
+  },
+  "tests": "./**/*_test.js",
+  "timeout": 10000,
+  "name": "E2ETest"
+}
