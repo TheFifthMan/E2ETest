@@ -3,7 +3,8 @@
   "helpers": {
     "WebDriverIO": {
       "url": "http://www.freebuf.com",
-      "browser": "chrome"
+      "browser": "chrome",
+      "uniqueScreenshotNames": "true"
     },
     "Mochawesome": {
       "uniqueScreenshotNames": "true"
@@ -22,13 +23,13 @@
           "steps": true
         }
       },
-    "mochawesome": {
-        "stdout": "./output/console.log",
-        "options": {
-          "reportDir": "./output",
-          "reportFilename": "report"
-        }
+      "mochawesome": {
+       "stdout": "./output/console.log",
+       "options": {
+         "reportDir": "./output",
+         "reportFilename": "report"
       }
+    }
     }
   },
   "bootstrap": false,
@@ -37,7 +38,8 @@
   "gherkin": {
     "features": "./features/*.feature",
     "steps": [
-      "./step_definitions/steps.js"
+      "./step_definitions/basic.js",
+      "./step_definitions/freebuf.js"
     ]
   },
   "tests": "./**/*_test.js",

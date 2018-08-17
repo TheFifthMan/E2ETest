@@ -1,0 +1,42 @@
+
+[0m[0m
+[0m  Google[0m
+  [31m  1) test @123[0m
+
+[0m  Google[0m
+  [31m  2) test login for freebug[0m
+
+[0m  Freebuf[0m
+  [32m  ✓[0m[90m open the freebuf and login form[0m[31m (13326ms)[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (27s)[0m
+[31m  2 failing[0m
+
+[0m  1) Google
+       test @123:
+[0m[31m     Element {"css":"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a"} was not found by text|CSS|XPath[0m[90m
+  
+  Scenario Steps:
+  
+  - I.grabAttributeFrom({"css":"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a"}, "href") at Object.obj.(anonymous function).obj.(anonymous function) [as grabAttributeFrom] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
+  - I.amOnPage("https://www.google.ru/webhp?hl=ru&sa=X&ved=0ahUKEwjY7rWfrPjbAhUHFiwKHas5DCMQPAgD") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
+  
+  Error: Element {"css":"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a"} was not found by text|CSS|XPath
+      at new ElementNotFound (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)
+      at assertElementExists (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:2116:11)
+      at WebDriverIO.grabAttributeFrom (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:770:5)
+      at <anonymous>
+      at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[0m
+[0m  2) Google
+       test login for freebug:
+[0m[31m     Cannot read property 'Loginform' of undefined[0m[90m
+  ypeError: Cannot read property 'Loginform' of undefined
+      at Then (step_definitions/freebuf.js:18:12)
+      at runSteps (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/interfaces/gherkin.js:45:11)
+      at Test (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/interfaces/gherkin.js:83:46)
+      at Context.test.fn (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/scenario.js:76:14)
+[0m
+
+

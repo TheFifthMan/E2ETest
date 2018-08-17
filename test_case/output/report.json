@@ -1,0 +1,347 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2018-08-17T09:49:46.835Z",
+    "end": "2018-08-17T09:50:14.298Z",
+    "duration": 27463,
+    "testsRegistered": 3,
+    "passPercent": 33.3,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "655c298e-5cb7-4e4a-a87b-b5622f346da6",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "20f91650-913d-446a-b6e6-1577938644f8",
+        "title": "Google",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Google \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a62d838c-7c59-4615-9f48-2d8f8a2cfd18",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Google \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 835,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3b1fe610-52c0-4b0b-9f81-2046f8231c9f",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Google \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f88e3621-0da3-4940-bacb-9fb43875ad2e",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: codeceptjs.after",
+            "fullTitle": "Google \"after each\" hook: codeceptjs.after",
+            "timedOut": false,
+            "duration": 110,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "63fa7527-6f51-49f2-b831-106224b89a20",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "test @123",
+            "fullTitle": "Google test @123",
+            "timedOut": false,
+            "duration": 4391,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "\"test_@123_dd5afeb5-3bfd-435e-85bc-c4729e06cc19.failed.png\"",
+            "code": "runSteps(child.steps)",
+            "err": {
+              "message": "Error: Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath",
+              "estack": "Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath\n\nScenario Steps:\n\n- I.grabAttributeFrom({\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"}, \"href\") at Object.obj.(anonymous function).obj.(anonymous function) [as grabAttributeFrom] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"https://www.google.ru/webhp?hl=ru&sa=X&ved=0ahUKEwjY7rWfrPjbAhUHFiwKHas5DCMQPAgD\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nError: Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath\n    at new ElementNotFound (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)\n    at assertElementExists (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:2116:11)\n    at WebDriverIO.grabAttributeFrom (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:770:5)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)"
+            },
+            "isRoot": false,
+            "uuid": "dd5afeb5-3bfd-435e-85bc-c4729e06cc19",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "dd5afeb5-3bfd-435e-85bc-c4729e06cc19"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 4391,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      },
+      {
+        "uuid": "6a8ccd68-9606-44ca-8ff2-09c02145b1e7",
+        "title": "Google",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Google \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "fcd91017-74e5-4805-8931-bf02efbb6e28",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Google \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 794,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b262bee6-1f49-4a17-8548-ddc1436cf0d6",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Google \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "987c76ac-aa48-42e3-9966-7e2d009f8092",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: codeceptjs.after",
+            "fullTitle": "Google \"after each\" hook: codeceptjs.after",
+            "timedOut": false,
+            "duration": 94,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ff46a76e-31fa-4f3d-b40d-5ad3550c6e1a",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "test login for freebug",
+            "fullTitle": "Google test login for freebug",
+            "timedOut": false,
+            "duration": 7119,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "\"test_login_00274287-9e37-446a-a011-e115266b6697.failed.png\"",
+            "code": "runSteps(child.steps)",
+            "err": {
+              "message": "TypeError: Cannot read property 'Loginform' of undefined",
+              "estack": "Cannot read property 'Loginform' of undefinedTypeError: Cannot read property 'Loginform' of undefined\n    at Then (step_definitions/freebuf.js:18:12)\n    at runSteps (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/interfaces/gherkin.js:45:11)\n    at Test (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/interfaces/gherkin.js:83:46)\n    at Context.test.fn (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/scenario.js:76:14)"
+            },
+            "isRoot": false,
+            "uuid": "00274287-9e37-446a-a011-e115266b6697",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "00274287-9e37-446a-a011-e115266b6697"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 7119,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      },
+      {
+        "uuid": "549cf46d-07bd-4290-a7a3-06c1e9f8c3ea",
+        "title": "Freebuf",
+        "fullFile": "/Users/wenzhongwei/code/E2ETest/test_case/cases/freebuf_test.js",
+        "file": "/cases/freebuf_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Freebuf \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "8f4bda44-0523-4a38-aa5e-2fd660b74b22",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Freebuf \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 727,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "fd9f5071-5349-4239-890e-e0e3abd9139c",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Freebuf \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b8250dba-59e3-4fa6-8e6d-31e4249384ab",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "Freebuf \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 55,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e31eb02e-ec0a-4a9a-84ca-a868790c54c1",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "open the freebuf and login form",
+            "fullTitle": "Freebuf: open the freebuf and login form",
+            "timedOut": false,
+            "duration": 13326,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "I.amOnPage('/');\nI.waitForElement({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span'}, 30);\nI.see('登录');\nI.click({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span'});\nI.switchToNextTab();\ndemoPage.Loginform('a403481704@163.com','Freebuf123');\nI.waitForElement({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a'},30);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e5e60275-dc63-4167-a851-bdac1d380819",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e5e60275-dc63-4167-a851-bdac1d380819"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 13326,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 0
+  },
+  "copyrightYear": 2018
+}

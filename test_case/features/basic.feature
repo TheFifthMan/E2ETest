@@ -1,10 +1,5 @@
-Feature: Freebuf login testing
-  In order to achieve my goals
-  As a persona
-  I want to be able to login with a Freebuf
+Feature: Google
 
-  Scenario: Login testing
-    Given I on the home page
-    And I Click the login button and fill my information
-    Then I login successful and redirect to index page
-
+Scenario: test @123
+  Given Open google
+  Then check link
