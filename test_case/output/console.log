@@ -1,75 +1,56 @@
 
 [0m[0m
 [0m  Google[0m
-  [31m  1) test @123[0m
+  [31m  1) "before each" hook: codeceptjs.before for "test @123"[0m
 
 [0m  Google[0m
-  [31m  2) test login for freebug[0m
+  [31m  2) "before each" hook: codeceptjs.before for "test login for freebug"[0m
 
 [0m  Freebuf[0m
-  [31m  3) open the freebuf and login form[0m
+  [31m  3) "before each" hook: codeceptjs.before for "open the freebuf and login form"[0m
 
 
-[92m [0m[32m 0 passing[0m[90m (1m)[0m
+[92m [0m[32m 0 passing[0m[90m (119ms)[0m
 [31m  3 failing[0m
 
 [0m  1) Google
-       test @123:
-[0m[31m     Element {"css":"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a"} was not found by text|CSS|XPath[0m[90m
-  
-  Scenario Steps:
-  
-  - I.grabAttributeFrom({"css":"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a"}, "href") at Object.obj.(anonymous function).obj.(anonymous function) [as grabAttributeFrom] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.amOnPage("https://www.google.ru/webhp?hl=ru&sa=X&ved=0ahUKEwjY7rWfrPjbAhUHFiwKHas5DCMQPAgD") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  
-  Error: Element {"css":"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a"} was not found by text|CSS|XPath
-      at new ElementNotFound (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)
-      at assertElementExists (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:2116:11)
-      at WebDriverIO.grabAttributeFrom (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:770:5)
-      at <anonymous>
-      at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+       "before each" hook: codeceptjs.before for "test @123":
+[0m[31m     Can't connect to WebDriver.
+Error: create container: Error response from daemon: invalid reference format
+
+Please make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible[0m[90m
+  rror: create container: Error response from daemon: invalid reference format
+      at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)
+      at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)
+      at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)
+      at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)
+      at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)
 [0m
 [0m  2) Google
-       test login for freebug:
-[0m[31m     element ([object Object]) still not present on page after 30 sec[0m[90m
-  
-  Scenario Steps:
-  
-  - I.waitForElement({"xpath":"//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.click({"xpath":"//*[@id=\"loginBtn\"]"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.fillField({"xpath":"//*[@id=\"password\"]"}, "Freebuf123") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.fillField({"xpath":"//*[@id=\"username\"]"}, "a403481704@163.com") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.switchToNextTab() at Object.obj.(anonymous function).obj.(anonymous function) [as switchToNextTab] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.click({"xpath":"//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.see("登录") at Object.obj.(anonymous function).obj.(anonymous function) [as see] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.waitForElement({"xpath":"//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.amOnPage("/") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  
-  Error: element ([object Object]) still not present on page after 30 sec
-      at new WaitUntilTimeoutError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:149:12)
-      at /Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/commands/waitUntil.js:29:19
-      at <anonymous>
+       "before each" hook: codeceptjs.before for "test login for freebug":
+[0m[31m     Can't connect to WebDriver.
+Error: create container: Error response from daemon: invalid reference format
+
+Please make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible[0m[90m
+  rror: create container: Error response from daemon: invalid reference format
+      at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)
+      at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)
+      at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)
+      at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)
+      at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)
 [0m
 [0m  3) Freebuf
-       open the freebuf and login form:
-[0m[31m     element ([object Object]) still not present on page after 30 sec[0m[90m
-  
-  Scenario Steps:
-  
-  - I.waitForElement({"xpath":"//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.click({"xpath":"//*[@id=\"loginBtn\"]"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.fillField({"xpath":"//*[@id=\"password\"]"}, "Freebuf123") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.fillField({"xpath":"//*[@id=\"username\"]"}, "a403481704@163.com") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.switchToNextTab() at Object.obj.(anonymous function).obj.(anonymous function) [as switchToNextTab] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.click({"xpath":"//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.see("登录") at Object.obj.(anonymous function).obj.(anonymous function) [as see] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.waitForElement({"xpath":"//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  - I.amOnPage("/") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)
-  
-  Error: element ([object Object]) still not present on page after 30 sec
-      at new WaitUntilTimeoutError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:149:12)
-      at /Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/commands/waitUntil.js:29:19
-      at <anonymous>
+       "before each" hook: codeceptjs.before for "open the freebuf and login form":
+[0m[31m     Can't connect to WebDriver.
+Error: create container: Error response from daemon: invalid reference format
+
+Please make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible[0m[90m
+  rror: create container: Error response from daemon: invalid reference format
+      at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)
+      at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)
+      at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)
+      at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)
+      at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)
 [0m
 
 

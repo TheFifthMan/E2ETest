@@ -5,27 +5,36 @@
             "57.0": {
                 "image": "selenoid/vnc:firefox_57.0",
                 "port": "4444",
-                "path": "/wd/hub"
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
             },
             "58.0": {
                 "image": "selenoid/vnc:firefox_58.0",
                 "port": "4444",
-                "path": "/wd/hub"
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
+
             },
             "59.0": {
                 "image": "selenoid/vnc:firefox_59.0",
                 "port": "4444",
-                "path": "/wd/hub"
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
+
             },
             "60.0": {
                 "image": "selenoid/vnc:firefox_60.0",
                 "port": "4444",
-                "path": "/wd/hub"
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
+
             },
             "61.0": {
                 "image": "selenoid/vnc:firefox_61.0",
                 "port": "4444",
-                "path": "/wd/hub"
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
+
             }
         }
        
@@ -36,22 +45,30 @@
             "68.0": {
                 "image": "selenoid/vnc:chrome:68.0",
                 "port": "4444",
-                "path": "/"
+                "path": "/",
+                "tmpfs": {"/tmp":"size=512m"}
+
             },
             "67.0": {
                 "image": "selenoid/vnc:chrome:67.0",
                 "port": "4444",
-                "path": "/"
+                "path": "/",
+                "tmpfs": {"/tmp":"size=512m"}
+
             },
             "66.0": {
                 "image": "selenoid/vnc:chrome:66.0",
                 "port": "4444",
-                "path": "/"
+                "path": "/",
+                "tmpfs": {"/tmp":"size=512m"}
+
             },
             "65.0": {
                 "image": "selenoid/vnc:chrome:65.0",
                 "port": "4444",
-                "path": "/"
+                "path": "/",
+                "tmpfs": {"/tmp":"size=512m"}
+
             }
         }
     }

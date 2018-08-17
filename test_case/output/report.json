@@ -1,25 +1,25 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 3,
+    "tests": 0,
     "passes": 0,
     "pending": 0,
-    "failures": 3,
-    "start": "2018-08-17T09:55:24.862Z",
-    "end": "2018-08-17T09:56:51.521Z",
-    "duration": 86659,
+    "failures": 0,
+    "start": "2018-08-17T10:21:51.121Z",
+    "end": "2018-08-17T10:21:51.240Z",
+    "duration": 119,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true,
     "passPercentClass": "danger",
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "8b22547f-f3cf-4ed9-968b-8431f1353cf3",
+    "uuid": "da6ca600-a9b9-4d94-bc91-885ad5b6d77f",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "12e10597-6108-4a90-a890-598cbb275468",
+        "uuid": "69fbdd66-e4c9-4b4b-ab56-3f05a0dd1dec",
         "title": "Google",
         "fullFile": "",
         "file": "",
@@ -37,29 +37,33 @@
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
             "fullTitle": "Google \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "7b20d9d8-281a-46ef-8265-3fb9ac60594f",
+            "uuid": "43cacdf2-e64d-4733-9f7a-e475398f9df9",
             "isHook": true,
             "skipped": false
           },
           {
-            "title": "\"before each\" hook: codeceptjs.before",
-            "fullTitle": "Google \"before each\" hook: codeceptjs.before",
+            "title": "\"before each\" hook: codeceptjs.before for \"test @123\"",
+            "fullTitle": "Google \"before each\" hook: codeceptjs.before for \"test @123\"",
             "timedOut": false,
-            "duration": 1492,
+            "duration": 59,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
             "code": "scenario.setup(suite)",
-            "err": {},
+            "err": {
+              "message": "Error: Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+              "estack": "Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessibleError: create container: Error response from daemon: invalid reference format\n    at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)\n    at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)\n    at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)\n    at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)\n    at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)"
+            },
             "isRoot": false,
-            "uuid": "d818c0cb-964d-44c2-bb27-8aee37ea6235",
+            "uuid": "9024efe1-0696-4879-86de-f94e36813ea9",
             "isHook": true,
             "skipped": false
           }
@@ -69,14 +73,14 @@
             "title": "\"after all\" hook: codeceptjs.afterSuite",
             "fullTitle": "Google \"after all\" hook: codeceptjs.afterSuite",
             "timedOut": false,
-            "duration": 2,
+            "duration": 0,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "77e65401-fc50-4244-882f-feb8e809436b",
+            "uuid": "8d58418e-caf8-4529-99a6-c77b42ec7cda",
             "isHook": true,
             "skipped": false
           },
@@ -84,14 +88,14 @@
             "title": "\"after each\" hook: codeceptjs.after",
             "fullTitle": "Google \"after each\" hook: codeceptjs.after",
             "timedOut": false,
-            "duration": 115,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "950f86e6-36ed-49d4-95b6-fed2e46ec047",
+            "uuid": "56e13abb-74cd-41c2-8b3e-85461c7e2a1f",
             "isHook": true,
             "skipped": false
           }
@@ -101,37 +105,32 @@
             "title": "test @123",
             "fullTitle": "Google test @123",
             "timedOut": false,
-            "duration": 6898,
-            "state": "failed",
+            "duration": 0,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
-            "context": "\"test_@123_365cacd3-d365-4838-af90-9556d691ecdf.failed.png\"",
             "code": "runSteps(child.steps)",
-            "err": {
-              "message": "Error: Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath",
-              "estack": "Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath\n\nScenario Steps:\n\n- I.grabAttributeFrom({\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"}, \"href\") at Object.obj.(anonymous function).obj.(anonymous function) [as grabAttributeFrom] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"https://www.google.ru/webhp?hl=ru&sa=X&ved=0ahUKEwjY7rWfrPjbAhUHFiwKHas5DCMQPAgD\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nError: Element {\"css\":\"#gbw > div > div > div.gb_qe.gb_R.gb_Pg.gb_Fg > div:nth-child(2) > a\"} was not found by text|CSS|XPath\n    at new ElementNotFound (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)\n    at assertElementExists (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:2116:11)\n    at WebDriverIO.grabAttributeFrom (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/helper/WebDriverIO.js:770:5)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "365cacd3-d365-4838-af90-9556d691ecdf",
+            "uuid": "79d10154-ab77-4485-884d-eb191206c222",
             "isHook": false,
-            "skipped": false
+            "skipped": true
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [
-          "365cacd3-d365-4838-af90-9556d691ecdf"
-        ],
+        "failures": [],
         "pending": [],
-        "skipped": [],
-        "duration": 6898,
+        "skipped": [
+          "79d10154-ab77-4485-884d-eb191206c222"
+        ],
+        "duration": null,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
       },
       {
-        "uuid": "26f726cd-d031-4fc1-991f-054404279611",
+        "uuid": "236758ed-5dce-4097-82e5-7ed39092b093",
         "title": "Google",
         "fullFile": "",
         "file": "",
@@ -147,22 +146,26 @@
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "5a14be42-a823-451b-9858-7347dc87694f",
+            "uuid": "c2cbf0cc-6e91-46f6-935b-ebbe228b13ec",
             "isHook": true,
             "skipped": false
           },
           {
-            "title": "\"before each\" hook: codeceptjs.before",
-            "fullTitle": "Google \"before each\" hook: codeceptjs.before",
+            "title": "\"before each\" hook: codeceptjs.before for \"test login for freebug\"",
+            "fullTitle": "Google \"before each\" hook: codeceptjs.before for \"test login for freebug\"",
             "timedOut": false,
-            "duration": 861,
+            "duration": 20,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
             "code": "scenario.setup(suite)",
-            "err": {},
+            "err": {
+              "message": "Error: Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+              "estack": "Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessibleError: create container: Error response from daemon: invalid reference format\n    at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)\n    at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)\n    at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)\n    at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)\n    at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)"
+            },
             "isRoot": false,
-            "uuid": "be48e01a-9057-4e3b-b4de-899451308794",
+            "uuid": "a401e0c7-0962-4243-8ead-26a20334cb7c",
             "isHook": true,
             "skipped": false
           }
@@ -172,14 +175,14 @@
             "title": "\"after all\" hook: codeceptjs.afterSuite",
             "fullTitle": "Google \"after all\" hook: codeceptjs.afterSuite",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "6f4cbc04-fd7c-461e-9cab-6ab948c7398a",
+            "uuid": "13373907-5fbe-4ff9-ad5b-75048b52ea4b",
             "isHook": true,
             "skipped": false
           },
@@ -187,14 +190,14 @@
             "title": "\"after each\" hook: codeceptjs.after",
             "fullTitle": "Google \"after each\" hook: codeceptjs.after",
             "timedOut": false,
-            "duration": 124,
+            "duration": 0,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "b9276206-52db-48c0-99c5-fbd21b02be0a",
+            "uuid": "2120769d-53d5-449a-a7fc-b81fcedf5276",
             "isHook": true,
             "skipped": false
           }
@@ -204,37 +207,32 @@
             "title": "test login for freebug",
             "fullTitle": "Google test login for freebug",
             "timedOut": false,
-            "duration": 37932,
-            "state": "failed",
+            "duration": 0,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
-            "context": "\"test_login_4882d4f7-8e3f-4fdc-826e-21dff30b543d.failed.png\"",
             "code": "runSteps(child.steps)",
-            "err": {
-              "message": "Error: element ([object Object]) still not present on page after 30 sec",
-              "estack": "element ([object Object]) still not present on page after 30 sec\n\nScenario Steps:\n\n- I.waitForElement({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a\"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.click({\"xpath\":\"//*[@id=\\\"loginBtn\\\"]\"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.fillField({\"xpath\":\"//*[@id=\\\"password\\\"]\"}, \"Freebuf123\") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.fillField({\"xpath\":\"//*[@id=\\\"username\\\"]\"}, \"a403481704@163.com\") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.switchToNextTab() at Object.obj.(anonymous function).obj.(anonymous function) [as switchToNextTab] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.click({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span\"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.see(\"登录\") at Object.obj.(anonymous function).obj.(anonymous function) [as see] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.waitForElement({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span\"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"/\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nError: element ([object Object]) still not present on page after 30 sec\n    at new WaitUntilTimeoutError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:149:12)\n    at /Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/commands/waitUntil.js:29:19\n    at <anonymous>"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "4882d4f7-8e3f-4fdc-826e-21dff30b543d",
+            "uuid": "2b4f3554-2a18-497c-8fd6-d2ae8dd42ca2",
             "isHook": false,
-            "skipped": false
+            "skipped": true
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [
-          "4882d4f7-8e3f-4fdc-826e-21dff30b543d"
-        ],
+        "failures": [],
         "pending": [],
-        "skipped": [],
-        "duration": 37932,
+        "skipped": [
+          "2b4f3554-2a18-497c-8fd6-d2ae8dd42ca2"
+        ],
+        "duration": null,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0
       },
       {
-        "uuid": "cb6cdf6b-b878-4296-b5f7-70b1f6169a85",
+        "uuid": "5c33af78-52d3-4024-be75-98853f06d868",
         "title": "Freebuf",
         "fullFile": "/Users/wenzhongwei/code/E2ETest/test_case/cases/freebuf_test.js",
         "file": "/cases/freebuf_test.js",
@@ -243,29 +241,33 @@
             "title": "\"before all\" hook: codeceptjs.beforeSuite",
             "fullTitle": "Freebuf \"before all\" hook: codeceptjs.beforeSuite",
             "timedOut": false,
-            "duration": 0,
+            "duration": 11,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.suiteSetup(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "27539772-9d26-4e5e-8600-1e1cd246928f",
+            "uuid": "794eab37-8278-4b0d-90ce-cd6cc4a170e0",
             "isHook": true,
             "skipped": false
           },
           {
-            "title": "\"before each\" hook: codeceptjs.before",
-            "fullTitle": "Freebuf \"before each\" hook: codeceptjs.before",
+            "title": "\"before each\" hook: codeceptjs.before for \"open the freebuf and login form\"",
+            "fullTitle": "Freebuf \"before each\" hook: codeceptjs.before for \"open the freebuf and login form\"",
             "timedOut": false,
-            "duration": 762,
+            "duration": 14,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
             "code": "scenario.setup(suite)",
-            "err": {},
+            "err": {
+              "message": "Error: Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+              "estack": "Can't connect to WebDriver.\nError: create container: Error response from daemon: invalid reference format\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessibleError: create container: Error response from daemon: invalid reference format\n    at new RuntimeError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)\n    at Request._callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)\n    at Request.self.callback (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)\n    at Request.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)\n    at IncomingMessage.<anonymous> (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)"
+            },
             "isRoot": false,
-            "uuid": "312b3233-b73f-49b6-ab88-5d3e4b2b1115",
+            "uuid": "07d8ef5b-d77b-4864-bfaa-a11860194ca5",
             "isHook": true,
             "skipped": false
           }
@@ -282,7 +284,7 @@
             "code": "scenario.suiteTeardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "50efe3d6-5561-412c-9614-b25ce73f84e8",
+            "uuid": "473c633d-dbfb-4270-9524-b3a4b64e4b5f",
             "isHook": true,
             "skipped": false
           },
@@ -290,14 +292,14 @@
             "title": "\"after each\" hook: finalize codeceptjs",
             "fullTitle": "Freebuf \"after each\" hook: finalize codeceptjs",
             "timedOut": false,
-            "duration": 152,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "scenario.teardown(suite)",
             "err": {},
             "isRoot": false,
-            "uuid": "3da9b8aa-d2ed-4b81-8fcc-d5ee7eb3865d",
+            "uuid": "1e98df93-755d-4024-88c8-bf5aaa58bc25",
             "isHook": true,
             "skipped": false
           }
@@ -307,31 +309,26 @@
             "title": "open the freebuf and login form",
             "fullTitle": "Freebuf: open the freebuf and login form",
             "timedOut": false,
-            "duration": 38301,
-            "state": "failed",
+            "duration": 0,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
-            "context": "\"open_the_f_5a3ebde1-5df1-42f2-9c30-3513718dddda.failed.png\"",
             "code": "I.amOnPage('/');\nI.waitForElement({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span'}, 30);\nI.see('登录');\nI.click({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span'});\nI.switchToNextTab();\ndemoPage.Loginform('a403481704@163.com','Freebuf123');\nI.waitForElement({xpath:'//*[@id=\"undefined-sticky-wrapper\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a'},30);",
-            "err": {
-              "message": "Error: element ([object Object]) still not present on page after 30 sec",
-              "estack": "element ([object Object]) still not present on page after 30 sec\n\nScenario Steps:\n\n- I.waitForElement({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[1]/div/ul/li[1]/a\"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.click({\"xpath\":\"//*[@id=\\\"loginBtn\\\"]\"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.fillField({\"xpath\":\"//*[@id=\\\"password\\\"]\"}, \"Freebuf123\") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.fillField({\"xpath\":\"//*[@id=\\\"username\\\"]\"}, \"a403481704@163.com\") at Object.obj.(anonymous function).obj.(anonymous function) [as fillField] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.switchToNextTab() at Object.obj.(anonymous function).obj.(anonymous function) [as switchToNextTab] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.click({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span\"}) at Object.obj.(anonymous function).obj.(anonymous function) [as click] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.see(\"登录\") at Object.obj.(anonymous function).obj.(anonymous function) [as see] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.waitForElement({\"xpath\":\"//*[@id=\\\"undefined-sticky-wrapper\\\"]/div/div/div[1]/div[3]/div[2]/div/ul/li[1]/a/span\"}, 30) at Object.obj.(anonymous function).obj.(anonymous function) [as waitForElement] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n- I.amOnPage(\"/\") at Object.obj.(anonymous function).obj.(anonymous function) [as amOnPage] (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/codeceptjs/lib/actor.js:28:26)\n\nError: element ([object Object]) still not present on page after 30 sec\n    at new WaitUntilTimeoutError (/Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:149:12)\n    at /Users/wenzhongwei/.nvm/versions/node/v8.11.4/lib/node_modules/webdriverio/build/lib/commands/waitUntil.js:29:19\n    at <anonymous>"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "5a3ebde1-5df1-42f2-9c30-3513718dddda",
+            "uuid": "b8132c6f-de82-452c-bc30-36cb73be6755",
             "isHook": false,
-            "skipped": false
+            "skipped": true
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [
-          "5a3ebde1-5df1-42f2-9c30-3513718dddda"
-        ],
+        "failures": [],
         "pending": [],
-        "skipped": [],
-        "duration": 38301,
+        "skipped": [
+          "b8132c6f-de82-452c-bc30-36cb73be6755"
+        ],
+        "duration": null,
         "root": false,
         "rootEmpty": false,
         "_timeout": 0

@@ -4,7 +4,15 @@
     "WebDriverIO": {
       "url": "http://www.freebuf.com",
       "browser": "chrome",
-      "uniqueScreenshotNames": "true"
+      "host":"192.168.31.215",
+      "uniqueScreenshotNames": "true",
+      "desiredCapabilities": { 
+          "browserName": "chrome", 
+          "version": "68.0",
+          "enableVNC": true,
+          "enableVideo": true 
+      } 
+
     },
     "Mochawesome": {
       "uniqueScreenshotNames": "true"
