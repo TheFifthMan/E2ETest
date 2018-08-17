@@ -9,7 +9,7 @@
       "uniqueScreenshotNames": "true",
       "desiredCapabilities": { 
           "version": "68.0",
-          "enableVNC":false,
+          "enableVNC":true,
           "enableVideo":true
       } 
 

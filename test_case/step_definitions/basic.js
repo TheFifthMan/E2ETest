@@ -5,12 +5,12 @@ const I = actor();
 
 Given('I have a defined step', () => {
   // TODO: replace with your own step
-  I.amOnPage('https://google.com');
+  I.amOnPage('https://www.baidu.com');
 });
 
 Given('Open google', () => {
   // From "features\lawPage.feature" {"line":72,"column":7}
-  I.amOnPage('https://www.google.ru/webhp?hl=ru&sa=X&ved=0ahUKEwjY7rWfrPjbAhUHFiwKHas5DCMQPAgD');
+  I.amOnPage('https://www.baidu.com');
 });
 
 Then('check link', async () => {
