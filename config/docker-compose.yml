@@ -9,7 +9,7 @@ services:
       - "/data/video/:/opt/selenoid/video"
       - "/data/logs/:/opt/selenoid/logs/"
     environment:
-      - OVERRIDE_VIDEO_OUTPUT_DIR=$/data/storedVideo/
+      - OVERRIDE_VIDEO_OUTPUT_DIR=/data/storedVideo/
     command: ["-log-output-dir","/opt/selenoid/logs","-conf", "/etc/selenoid/browsers.json", "-video-output-dir", "/opt/selenoid/video","-max-timeout","20m0s","-mem","850m"]
     ports:
       - "4444:4444"
